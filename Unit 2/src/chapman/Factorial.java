@@ -15,16 +15,17 @@ public class Factorial {
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
 		System.out.println("Please enter a number");
-		long number = s.nextLong();
-		long z = factorial(number);
+		double number = s.nextDouble();
+		double z = factorial(number);
 		System.out.println(z);
 	}
-	public static long factorial(long x){
-		/**
-		 * The method calculates the factorial of the number entered unless that number is less than or equal to zero.
-		 * @param "x" This is the number entered by the user which will be used when calculating the factorial.
-		 * @return "x" This is the new value of the number entered by the user after the factorial of it has been found.
-		 */
+	/**
+	 * The method calculates the factorial of the number entered unless that number is less than or equal to zero.
+	 * @param "x" This is the number entered by the user which will be used when calculating the factorial.
+	 * @return "x" This is the new value of the number entered by the user after the factorial of it has been found.
+	 */
+	public static double factorial(double x){
+		
 		if(x<0){
 			return -1;
 		}
@@ -32,7 +33,7 @@ public class Factorial {
 			return 1;
 		}
 		else{
-			for (long y=x-1; y>0;y--){
+			for (double y=x-1; y>0;y--){
 				x=x*y;
 			}
 			return x;

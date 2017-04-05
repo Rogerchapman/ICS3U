@@ -16,12 +16,13 @@ public class SumDigits {
 		int x = sumDigits(sum);
 		System.out.println(x);
 	}
+	/**
+	 * This method calculates the sum of the digits entered by the user
+	 * @param "num" This is the number that is entered by the user
+	 * @return "sum" This is the sum of the digits from the number that was entered by the user
+	 */
 	public static int sumDigits(int num){
-		/**
-		 * This method calculates the sum of the digits entered by the user
-		 * @param "num" This is the number that is entered by the user
-		 * @return "sum" This is the sum of the digits from the number that was entered by the user
-		 */
+		
 		int sum = 0;
 		while(num>=1){
 			sum = sum+num%10;

@@ -16,17 +16,30 @@ public class IsPrime {
 		boolean z = isPrime(number);
 		System.out.println(z);
 	}
+	/**
+	 * The method determines whether or not the number entered is prime or not by dividing it by every number that is less than or equal to half of itself and then returns true or false.
+	 * @param "number" This is the number that is entered by the user.
+	 * @return true/false is what is returned depending on whether or not the number entered is prime.
+	 */
 	public static boolean isPrime(int number){
-		/**
-		 * The method determines whether or not the number entered is prime or not by dividing it by every number that is less than or equal to half of itself and then returns true or false.
-		 * @param "number" This is the number that is entered by the user.
-		 * @return true/false is what is returned depending on whether or not the number entered is prime.
-		 */
+		
 		for (int i=2; i<=number/2; i++){
-			if(number%i == 0){
+			if(isDivisible(number, i)){
 				return false;
 			}
 		}
 		return true;
+	}
+	/**
+	 * The method checks if the numerator is divisible by the denominator
+	 * @param "numerator" This is the number that was entered by the user
+	 * @param "denominator" This is the counter that the numerator will be divided by
+	 * @return true/false This depends on whether or not the numerator is divisible by the denominator
+	 */
+	public static boolean isDivisible(int numerator, int denominator) {
+		if (numerator % denominator == 0) {
+			return true;
+		} 
+		return false;
 	}
 }
