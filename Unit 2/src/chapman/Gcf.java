@@ -3,8 +3,9 @@ package chapman;
 import java.util.Scanner;
 
 /**
- * Gcf.java The program compares 2 numbers entered by the user and finds the
- * greatest common factor between them. April 4 2017
+ * Gcf.java 
+ * The program compares 2 numbers entered by the user and finds the greatest common factor between them. 
+ * April 4 2017
  * 
  * @author Roger Chapman
  */
