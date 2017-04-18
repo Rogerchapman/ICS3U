@@ -3,7 +3,7 @@ package chapman;
 import java.util.Scanner;
 /**
  * ReverseSentence.java
- * The program  prints out an inputted sentence backwards, this includes capital letters.
+ * The program  prints out an inputed sentence backwards, this includes capital letters.
  * April 13 2017
  * @author Roger Chapman
  */
