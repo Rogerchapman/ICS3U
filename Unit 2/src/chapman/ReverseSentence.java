@@ -22,7 +22,7 @@ public class ReverseSentence {
 					else {
 						System.out.print(Character.toLowerCase(sentence[i].charAt(j)));
 					}
-				} 
+				}      
 				else {
 					System.out.print(sentence[i].charAt(j));
 				}

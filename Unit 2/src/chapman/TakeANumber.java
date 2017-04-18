@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  */
 public class TakeANumber {
-	
+	    
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the current slip number (Between 1 - 999)");
