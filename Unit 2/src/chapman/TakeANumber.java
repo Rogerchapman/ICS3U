@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 /**
  * TakeANumber.java
- * April 18 2017
+ * April 18, 2017
  * The program asks the user to enter the slip number and then enter one of a few options then it prints values based on this each time the user enters close
  * @author Roger Chapman, Wayne Chau, Ahmed Addo
  *
