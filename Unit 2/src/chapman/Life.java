@@ -103,7 +103,6 @@ public class Life {
 						}
 						if (counter == 2 || counter == 3) {//If the cell had 2 or 3 living neighbours, it stays alive
 							secretWorld[i][j] = 1;
-							totalAlive++;
 						} else if (counter == 1 || counter == 4 || counter == 5 || counter == 6 || counter == 7|| counter == 8) {//If the cell did not have 2 or 3 living neighbours it dies
 							secretWorld[i][j] = 0;
 							totalAlive--;
@@ -173,6 +172,9 @@ public class Life {
 					System.out.print(secretWorld[i][j]);//Prints out the new day in life world based on the change in dead or alive cells.
 				}
 				System.out.println();
+			}
+			if(totalAlive==0){
+				System.out.println("All of the creatures in Life World are dead. GAME OVER.");
 			}
 		}
 	}
