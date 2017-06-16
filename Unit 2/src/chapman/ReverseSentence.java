@@ -1,10 +1,11 @@
 package chapman;
 
 import java.util.Scanner;
+
 /**
- * ReverseSentence.java
- * The program  prints out an inputed sentence backwards, this includes capital letters.
- * April 13 2017
+ * ReverseSentence.java The program prints out an inputed sentence backwards,
+ * this includes capital letters. April 13 2017
+ * 
  * @author Roger Chapman
  */
 
@@ -18,20 +19,17 @@ public class ReverseSentence {
 				if (((Character) (sentence[i].charAt(0))).toString().matches("[A-Z]")) {
 					if (j == sentence[i].length() - 1) {
 						System.out.print(Character.toUpperCase(sentence[i].charAt(j)));
-					} 
-					else {
+					} else {
 						System.out.print(Character.toLowerCase(sentence[i].charAt(j)));
 					}
-				}      
-				else {
+				} else {
 					System.out.print(sentence[i].charAt(j));
 				}
-				
+
 			}
 			System.out.print(" ");
-			}
-			
-
 		}
 
 	}
+
+}
